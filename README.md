@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NextJs 14 App Router and NextAuth Boilerplate
 
-## Getting Started
+<p align="center">
+    <img 
+        src="https://github.com/weehongkoh/nextjs-app-router-auth0/assets/105431607/e0e566ba-1786-4eda-b57d-7e340e247508" 
+        alt="NextJs 14 App Router and Auth0" 
+    />
+</p>
+<p align="center"><a href="https://nextjs-app-router-auth0.vercel.app/">Demo Link</a></p>
 
-First, run the development server:
+This is a NextJs 14 App Router boilerplate that uses the Auth0 library.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+If you just want to implement the Next.js with NextAuth, go to [here](https://github.com/weehongkoh/nextjs-app-router-nextauth).
+
+## Latest Implementation
+
+- 25 May, 2024 - Add Auth0 Library
+
+## Pages
+
+- [x] Protected Page
+
+## How to Use?
+
+Clone this repository.
+
+Copy the `.env.example` and rename it as `.env` .
+Insert the value to respective field
+
+Run the following command to generate `AUTH0_SECRET`, `openssl rand -base64 32`.
+
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+AUTH0_SECRET=
+AUTH0_BASE_URL=
+AUTH0_ISSUER_BASE_URL=
+AUTH0_CLIENT_ID=
+AUTH0_CLIENT_SECRET=
+```
